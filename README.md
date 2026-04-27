@@ -52,9 +52,31 @@ This project is built for:
 
 ---
 
-## 📸 Screenshots
+## 📁 Project Structure
 
-(Add your screenshots here — dashboard, table view, etc.)
+```
+operator-helper/
+│
+├── authentication/
+│   ├── auth.php          # Login authentication + session handling
+│   └── message.php       # Error message display page
+│
+├── login/
+│   ├── loginpage.html    # Main login UI
+│   └── loginpage.css     # Login page styling
+│
+├── main/
+│   ├── operator.php      # Operator dashboard (view/search customers)
+│   ├── admin.php         # Admin dashboard (search/update customers)
+│   └── logout.php        # Session destroy + redirect
+│
+├── customer/
+│   ├── customer.php      # Add new customer page
+│   └── customer.css      # Customer page styling
+│
+└── database/
+    └── db.php            # MySQL database connection
+```
 
 ---
 
