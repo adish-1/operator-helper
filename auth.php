@@ -1,0 +1,30 @@
+<?php
+  session_start();
+  if(isset($_POST['username'],$_POST['password']))
+  {
+     $username=$_POST['username'];
+     $password=$_POST['password'];
+     if($username=="operator" && $password=="admin")
+     {
+       $_SESSION['user']="operator";
+       header("location:../main/operator.php");
+       exit();
+     }
+     else if($username=="root" && $password=="admin@123")
+     {
+        $_SESSION['user']="root";
+        header("location:../main/admin.php");
+        exit();
+     }
+     else 
+     {
+       header("location:message.php?msg=false");
+       exit();
+     }
+  }
+  else
+  {
+    header("location:message.php?msg=novalue");
+    exit();
+  }
+ ?>

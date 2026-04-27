@@ -1,0 +1,88 @@
+body
+ {
+    background:#0F172A;
+    min-height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ fieldset
+ {
+     background: #ffffff;
+     border: none;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     width: 90%;
+     flex-direction: column;
+     column-gap: 40px;
+     align-items: center; 
+ } 
+ h2
+ {
+     font-family: "Zen Dots", sans-serif;
+     letter-spacing: 5px;
+     margin-bottom: 40px;
+ }
+ form{
+     width: 90%;
+    max-width:700px;
+ }
+  input
+  {
+      width: 90%;
+     margin-bottom: 60px;
+     height: 35px;
+     border: 1px solid #8c8c8c;
+     font-weight: bold;
+     outline: none;
+     transition: 0.3s ease all;
+     font-size: 15px;
+  }
+  input:focus
+  {
+      transform: scale(1.04);
+      box-shadow: 0 0 10px #158cff;
+  }
+  #submit
+  {
+      
+      display: flex;
+      flex-direction: row;
+      margin: 50px auto;
+      
+      gap:30px;
+  }
+  select
+  {
+      width: 60%;
+      height: 40px;
+      border: none;
+      background: #d1d1d1;
+      outline: none;
+      font-weight: bold;
+      font-size: 15px;
+  }
+  select:focus
+  {
+      border: 2px solid #95f667;
+  }
+  input:required:valid
+  {
+      border: 1px solid #51ff2b;
+  }
+   input[type="submit"],input[type="reset"]
+   {
+       border: none;
+       background: linear-gradient(135deg,#4366c8,#517cf3);
+       color: white;
+       border-radius: 10px;
+       height: 40px;
+       width: 70%;
+      max-width: 600px;
+   }
+   input:placeholder
+   {
+       color: black;
+   }    
