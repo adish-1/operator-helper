@@ -37,7 +37,7 @@ This project focuses on providing a fast, simple, and real-world solution for ma
 ## 🔐 Security Note
 
 Database credentials are not included in this repository.  
-A localhost db with a table operator is available use that for local host testing.
+A localhost database file is available — use it for local testing.
 create a `db.php` file with your database details when you host online.
 
 ---
