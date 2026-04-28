@@ -37,7 +37,8 @@ This project focuses on providing a fast, simple, and real-world solution for ma
 ## 🔐 Security Note
 
 Database credentials are not included in this repository.  
-Create your own `db.php` file with your database details.
+A localhost db with a table operator is available use that for local host testing.
+create a `db.php` file with your database details when you host online.
 
 ---
 
