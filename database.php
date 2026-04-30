@@ -1,8 +1,8 @@
 <?php
- $host="sql100.infinityfree.com";
- $dbuser="if0_41420726";
- $dbpass="LTp2R8ZmOJCFda9";
- $dbname="if0_41420726_survey_2026";
+ $host="localhost";
+ $dbuser="root";
+ $dbpass="";
+ $dbname="operator";
  $conne=mysqli_connect($host,$dbuser,$dbpass,$dbname);
  if(!$conne)
  {
